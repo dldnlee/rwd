@@ -1,8 +1,7 @@
-@keyframes fade-effect {
+@keyframes fadeEffect {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
