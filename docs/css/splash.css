@@ -1,0 +1,36 @@
+.splash-area {
+  background: rgb(0, 2, 130);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.splash-logo {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  animation: fade-effect 3s ease-in-out both;
+}
+
+.splash-image {
+  width: clamp(5rem, 100%, 9.375rem);
+}
+
+
+.splash-caption {
+  color: white;
+  text-align: center;
+  font-size: clamp(1.5rem, 10vw, 6rem);
+  font-weight: 900;
+}
+
+@media (min-width: 768px){
+  .splash-caption {
+    white-space: nowrap;
+  }
+} 
