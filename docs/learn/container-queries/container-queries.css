@@ -1,1 +1,29 @@
 /* 컨테이터 쿼리 */
+.post {
+  container-type: inline-size;
+}
+
+
+.card h2 {
+  background-color: pink;
+  container-type: inline-size;
+  container-name: card;
+}
+
+@media (min-width: 768px) {
+  .card h2 {
+    background-color: yellow;
+  }
+
+  /* @container (min-width: 900px) {
+    .card h2 {
+      background-color: aqua;
+    } 
+  } */
+
+  @container card (min-width: 500px) {
+    .card h2 {
+      background-color: aqua;
+    }
+  }
+}
